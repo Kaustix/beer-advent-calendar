@@ -1,4 +1,5 @@
 # beer-advent-calendar
+This is a simple project playground for learning Vue and Vuex
 
 ## Project setup
 ```
