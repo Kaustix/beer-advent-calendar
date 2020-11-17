@@ -7,12 +7,15 @@
     "start:json-server": "json-server --watch --port 3000 ./src/assets/db.json",
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "start:prod": "node server.js",
+    "heroku-postbuild": "npm run build"
   },
   "dependencies": {
     "axios": "^0.21.0",
     "core-js": "^3.6.5",
     "es6-promise": "^4.2.8",
+    "express": "^4.17.1",
     "json-server": "^0.16.3",
     "vue": "^3.0.0",
     "vuex": "^4.0.0-rc.1"
