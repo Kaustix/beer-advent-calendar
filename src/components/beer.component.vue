@@ -60,16 +60,11 @@ export default {
 
     .description {
         font-size: 14px;
-        display: -webkit-box;
-        overflow: hidden;
-        -webkit-line-clamp: 4;
-        -webkit-box-orient: vertical;
     }
 
     .info {
         display: flex;
         flex-direction: row;
-        // justify-content: space-between;
 
         >div {
             flex: 33.33%;
