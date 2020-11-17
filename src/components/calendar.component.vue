@@ -33,7 +33,7 @@ export default {
     }
 
     .day {
-        width: 400px;
+        width: 480px;
         margin: 8px;
     }
 </style>

@@ -9,6 +9,7 @@
             <div class="location">{{beer.location}}</div>
             <p class="description">{{beer.description}}</p>
             <div class="info">
+                <info title="Style" :details="beer.style"/>
                 <info title="ABV" :details="beer.abv + '%'"/>
                 <info title="Bitterness" :details="bitterness + ' IBU'"/>
             </div>
@@ -68,7 +69,10 @@ export default {
     .info {
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
-        padding-right: 20px;
+        // justify-content: space-between;
+
+        >div {
+            flex: 33.33%;
+        }
     }
 </style>

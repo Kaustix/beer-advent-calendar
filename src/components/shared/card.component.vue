@@ -20,7 +20,6 @@ export default {
     .card-container {
         border-radius: 16px;
         background: #f7f7f7;
-        // box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
     }
 
     .header {
