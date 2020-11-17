@@ -70,18 +70,21 @@
 
 /* Speeds */
 #snow i:nth-of-type(4n) {
-  -webkit-animation-duration: 16.3s;
-  -moz-animation-duration: 16.3s;
+    animation-duration: 16.3s;
+    -webkit-animation-duration: 16.3s;
+    -moz-animation-duration: 16.3s;
 }
 
 #snow i:nth-of-type(4n+1){
-  -webkit-animation-duration: 16.1s;
-  -moz-animation-duration: 16.1s;
-  }
+    animation-duration: 16.1s;
+    -webkit-animation-duration: 16.1s;
+    -moz-animation-duration: 16.1s;
+}
 
 #snow i:nth-of-type(4n+2) {
-  -webkit-animation-duration: 12.7s;
-  -moz-animation-duration: 12.7s;
+    animation-duration: 12.7s;
+    -webkit-animation-duration: 12.7s;
+    -moz-animation-duration: 12.7s;
 }
 
 /* Delays */

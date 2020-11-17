@@ -3,7 +3,6 @@
         <div>
             <div>
                 <span class="day">{{beer.day}}</span>
-                
             </div>
             <img :src="require('../assets/beers/' + beer.day + '.png')" alt="beer" class="beer-image"/>
             <div class="person">{{beer.person}}</div>
