@@ -4,6 +4,7 @@
   "private": true,
   "scripts": {
     "start": "npm run serve",
+    "start:json-server": "json-server --watch --port 3000 ./src/assets/db.json",
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint"
@@ -12,6 +13,7 @@
     "axios": "^0.21.0",
     "core-js": "^3.6.5",
     "es6-promise": "^4.2.8",
+    "json-server": "^0.16.3",
     "vue": "^3.0.0",
     "vuex": "^4.0.0-rc.1"
   },
@@ -22,7 +24,9 @@
     "@vue/compiler-sfc": "^3.0.0",
     "babel-eslint": "^10.1.0",
     "eslint": "^6.7.2",
-    "eslint-plugin-vue": "^7.0.0-0"
+    "eslint-plugin-vue": "^7.0.0-0",
+    "less": "^3.12.2",
+    "less-loader": "^7.1.0"
   },
   "eslintConfig": {
     "root": true,

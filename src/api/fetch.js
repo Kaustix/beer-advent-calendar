@@ -1,5 +1,5 @@
 import axios from 'axios';
-import settings from 'settings';
+import settings from '@/settings';
 
 export const initialize = () => {
   axios.defaults.headers.common.accept = 'application/json';
@@ -7,10 +7,7 @@ export const initialize = () => {
 
 export const parseResponse = (response) => ({ ok: response.status < 400 || response.status > 499, ...response });
 
-const getConfig = (baseURL, params) => getToken().then((token) => {
-  const options = baseURL ? { baseURL, params } : { baseURL: settings.apiBaseUrl, params };
-  return options;
-});
+const getConfig = (baseURL, params) => Promise.resolve(baseURL ? { baseURL, params } : { baseURL: settings.apiUrl, params });
 
 export const get = (resource, params, baseUrl) =>
   getConfig(baseUrl, params)

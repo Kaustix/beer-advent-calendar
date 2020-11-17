@@ -1,0 +1,1 @@
+export const sortBy = (array, property) => array.sort((a, b) => a[property] - b[property]);
