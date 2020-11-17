@@ -1,14 +1,18 @@
 <template>
     <div class="container">
         <div>
-            <span class="day">{{ beer.day}} </span>
-            <img src="https://cdn.shoplightspeed.com/shops/626891/files/23829661/660x880x1/oldman-river-brewing-st-joes-abbey-style-brown-ale.jpg" alt="beer" class="beer-image"/>
+            <div>
+                <span class="day">{{beer.day}}</span>
+                
+            </div>
+            <img :src="require('../assets/beers/' + beer.day + '.png')" alt="beer" class="beer-image"/>
+            <div class="person">{{beer.person}}</div>
         </div>
         <div class="details">
-            <h2>{{beer.name}}</h2>
+            <div class="name">{{beer.name}}</div>
             <div>{{beer.brewery}}</div>
-            <div>{{beer.location}}</div>
-            <p>{{beer.description}}</p>
+            <div class="location">{{beer.location}}</div>
+            <p class="description">{{beer.description}}</p>
             <div class="info">
                 <info title="ABV" :details="beer.abv + '%'"/>
                 <info title="Bitterness" :details="beer.ibu + ' IBU'"/>
@@ -52,19 +56,34 @@ export default {
             cursor: pointer;
         }
     }
+
     .beer-image {
         width: 140px;
         height: 200px;
     }
 
     .day {
-        font-size: 60px;
+        font-size: 70px;
         color: grey;
         font-family: 'Mountains of Christmas', cursive;
     }
 
+    .person {
+        font-weight: bold;
+        font-size: 20px;
+    }
+
+    .name {
+        font-weight: bold;
+        font-size: 20px;
+    }
+
     .details {
         width: 100%;
+    }
+
+    .description {
+        font-size: 14px;
     }
 
     .info {

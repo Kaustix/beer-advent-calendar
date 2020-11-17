@@ -1,15 +1,18 @@
 <template>
+  <SnowFlakes/>
   <h1 id="title">Beer Advent Calendar</h1>
   <Calendar/>
 </template>
 
 <script>
 import Calendar from '@/components/calendar.component.vue'
+import SnowFlakes from '@/components/snowflakes.component.vue';
 
 export default {
   name: 'App',
   components: {
-    Calendar
+    Calendar,
+    SnowFlakes
   }
 }
 </script>
@@ -23,18 +26,23 @@ export default {
   padding-top: 20px;
   
   background-color: #F6F7F8;
-// background: linear-gradient(to right, #e6f0ff 0%, #bae0fc 100%);
-// background: linear-gradient(to right, #a5fea0 0%, #ee606d 100%);
-
+  background: url('./assets/background.png') no-repeat fixed;
+  background-size: 100%
 }
 
 html, body {
   margin: 0px;
 }
 
+html, body, .snowfall {
+  width: 100%;
+  height: 100%;
+}
+
 #title {
   font-size: 50px;
   font-family: 'Mountains of Christmas', cursive;
   text-align: center;
+  color: white;
 }
 </style>

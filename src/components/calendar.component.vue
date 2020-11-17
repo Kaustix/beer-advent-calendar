@@ -32,7 +32,8 @@ export default {
         justify-content: center;
     }
     .beer-card {
-        width: 25%; // change this later, should just flex to best size
+        // width: 25%; // change this later, should just flex to best size
+        width: 400px;
         margin: 8px;
     }
 </style>
