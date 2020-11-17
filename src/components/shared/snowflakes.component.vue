@@ -8,7 +8,7 @@
         mounted() {
             const flakes = [];
             const types = ['❄','❅','❆'];
-            for(var i = 0, len = 240; i < len; i++) {
+            for(var i = 0, len = 80; i < len; i++) {
                 flakes.push('<i>' + types[i%3]  + '</i>');
             }  
             document.getElementById('snow').innerHTML = flakes.join('');
@@ -22,7 +22,7 @@
   top: -160px;
   left: 0;
   right: 0;
-  z-index: 1000;
+  z-index: 1;
 }
 
 #snow i {

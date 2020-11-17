@@ -6,7 +6,7 @@
 
 <script>
 import Calendar from '@/components/calendar.component.vue'
-import SnowFlakes from '@/components/snowflakes.component.vue';
+import SnowFlakes from '@/components/shared/snowflakes.component.vue';
 
 export default {
   name: 'App',
@@ -32,11 +32,6 @@ export default {
 
 html, body {
   margin: 0px;
-}
-
-html, body, .snowfall {
-  width: 100%;
-  height: 100%;
 }
 
 #title {

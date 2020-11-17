@@ -1,17 +1,17 @@
 <template>
     <div class="calender">
-        <beer-card class="beer-card" v-for="beer in beers" :beer="beer" :key="beer.id"/>
+        <day class="day" v-for="beer in beers" :beer="beer" :key="beer.id"/>
     </div>
 </template>
 
 <script>
 import { FETCH_BEERS } from '@/store/action.types';
-import BeerCard from './beer-card.component';
+import day from '@/components/day.component';
 
 export default {
     name: 'calendar',
     components: {
-        'beer-card': BeerCard
+        day
     },
     mounted() {
         this.$store.dispatch(FETCH_BEERS);
@@ -31,8 +31,8 @@ export default {
         flex-wrap: wrap;
         justify-content: center;
     }
-    .beer-card {
-        // width: 25%; // change this later, should just flex to best size
+
+    .day {
         width: 400px;
         margin: 8px;
     }
