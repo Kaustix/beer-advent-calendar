@@ -8,6 +8,7 @@
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
+    "deploy": "git push heroku master",
     "start:prod": "node server.js",
     "heroku-postbuild": "npm run build"
   },
